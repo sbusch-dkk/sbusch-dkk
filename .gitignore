@@ -1,0 +1,72 @@
+# --- Backup & temporary files
+*.bak
+*~
+
+# --- Betriebssystem-Müll ---
+.bash_history
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# --- C / C++ (Compiler-Output) ---
+*.exe
+*.ilk
+*.o
+*.obj
+*.out
+*.pdb
+bin/
+build/
+obj/
+
+# --- C# / VB / .NET ---
+*.dll
+*.exe
+*.pdb
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+.vs/
+[Bb]in/
+[Oo]bj/
+
+# --- Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Editor/IDE files
+.sublime-project
+.sublime-workspace
+
+# --- PHP / WordPress / Web ---
+*.log
+.env
+.env.local
+node_modules/
+vendor/
+wp-config.php
+wp-content/backup-db/
+wp-content/upgrade/
+wp-content/uploads/
+
+# --- Python (für später) ---
+*$py.class
+*.py[cod]
+.venv/
+__pycache__/
+env/
+
+# --- Vim swap files
+*.swo
+*.swp
+
+# --- VS Code Internals ---
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.code-workspace
+.history/
+.idea/
+.vscode/*

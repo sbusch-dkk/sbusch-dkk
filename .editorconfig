@@ -1,0 +1,38 @@
+# EditorConfig (https://editorconfig.org) hilft, konsistente Codestile beizubehalten
+# Diese Datei definiert die allgemeinen Codestil-Regeln für das Projekt. Spezifischere Regeln für bestimmte Dateitypen können weiter unten hinzugefügt werden.
+# EditorConfig-Dateien werden von oben nach unten gelesen. Die erste Übereinstimmung hat Vorrang. Daher sollte die spezifischste Regel am Ende der Datei stehen.
+
+root = true
+
+# Alle Dateien
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Spezifische Regeln für bestimmte Dateitypen
+
+# C/C++/C#/VB-Dateien verwenden 4 Leerzeichen für die Einrückung
+[*.{c,cpp,h,hpp,cs,vb}]
+indent_size = 4
+
+# Web- und Skript-Dateien verwenden 2 Leerzeichen für die Einrückung
+[*.{css,html,js,json,jsx,ts,tsx,yaml,yml}]
+indent_size = 2
+indent_style = space
+
+# Laut GNU Make-Dokumentation müssen Makefiles Tabs für die Einrückung verwenden, da sie sonst nicht korrekt interpretiert werden.
+[{Makefile,*.mk}]
+indent_style = tab
+indent_size = 4
+
+# Markdown-Dateien sollten keine überflüssigen Leerzeichen am Ende der Zeilen haben, da dies in Markdown zu unerwünschten Zeilenumbrüchen führen kann.
+[*.md]
+trim_trailing_whitespace = false
+
+# WordPress verwendet 4 Leerzeichen für die Einrückung in PHP-Dateien, um die Lesbarkeit zu verbessern und den Code konsistent zu halten.
+[*.php]
+indent_size = 4
