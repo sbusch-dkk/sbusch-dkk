@@ -1,72 +1,142 @@
-# --- Backup & temporary files
+########################################
+#          BACKUP & TEMP FILES
+########################################
 *.bak
+*.tmp
 *~
+*.temp
 
-# --- Betriebssystem-Müll ---
-.bash_history
+########################################
+#          OS SYSTEM FILES
+########################################
+# --- Windows ---
 .DS_Store
-desktop.ini
 Thumbs.db
+desktop.ini
 
-# --- C / C++ (Compiler-Output) ---
-*.exe
-*.ilk
-*.o
-*.obj
-*.out
-*.pdb
-bin/
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Linux ---
+.bash_history
+.directory
+.cache/
+.Trash-*
+.fuse_hidden*
+*.swp
+*.swo
+
+########################################
+#          BUILD OUTPUT (ALL LANGS)
+########################################
+[Bb]in/
+[Oo]bj/
+[Ll]og/
 build/
-obj/
+out/
+dist/
+artifacts/
 
-# --- C# / VB / .NET ---
+*.obj
+*.o
+*.ilk
+*.pdb
 *.dll
 *.exe
-*.pdb
-*.sln.docstates
+*.so
+*.a
+*.out
+
+########################################
+#          .NET / C# / VB
+########################################
+.vs/
 *.suo
 *.user
 *.userosscache
-.vs/
-[Bb]in/
-[Oo]bj/
+*.sln.docstates
 
-# --- Database files
-*.db
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# EF / SQL Local DB
+*.mdf
+*.ldf
 *.sqlite
 *.sqlite3
 
-# --- Editor/IDE files
-.sublime-project
-.sublime-workspace
-
-# --- PHP / WordPress / Web ---
-*.log
-.env
-.env.local
-node_modules/
-vendor/
-wp-config.php
-wp-content/backup-db/
-wp-content/upgrade/
-wp-content/uploads/
-
-# --- Python (für später) ---
-*$py.class
-*.py[cod]
-.venv/
-__pycache__/
-env/
-
-# --- Vim swap files
-*.swo
-*.swp
-
-# --- VS Code Internals ---
-!.vscode/launch.json
+########################################
+#          VISUAL STUDIO CODE
+########################################
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
+!.vscode/launch.json
+
 *.code-workspace
 .history/
 .idea/
-.vscode/*
+
+########################################
+#          NODE / WEB DEV
+########################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+dist/
+build/
+webpack-dist/
+
+.env
+.env.*
+
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+
+########################################
+#          POWER SHELL
+########################################
+*.psd1
+*.psm1
+
+########################################
+#          PYTHON
+########################################
+__pycache__/
+*.py[cod]
+.venv/
+env/
+*$py.class
+
+########################################
+#          CMAKE / C / C++
+########################################
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+
+########################################
+#          EDITOR FILES
+########################################
+.sublime-project
+.sublime-workspace
+
+########################################
+#          MISC
+########################################
+*.log
+*.db
