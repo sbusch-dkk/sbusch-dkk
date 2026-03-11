@@ -77,9 +77,11 @@ project.fragment.lock.json
 #          VISUAL STUDIO CODE
 ########################################
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
+#! The three files below must be allowed locally in the project if needed!
+#! ! = allowed file extension or folder (for example: !.folder/*)
+#!.vscode/settings.json
+#!.vscode/tasks.json
+#!.vscode/launch.json
 
 *.code-workspace
 .history/
@@ -110,6 +112,9 @@ wp-content/backup-db/
 ########################################
 #          POWER SHELL
 ########################################
+#! File Extensions for PowerShell manifests and modules
+#! For PowerShell module development, the next two file
+#! extensions must be allowed locally in the project!
 *.psd1
 *.psm1
 
